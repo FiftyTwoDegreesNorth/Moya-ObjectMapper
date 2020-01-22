@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/*.swift"
-    ss.dependency "Moya", ""14.0.0-beta.6""
+    ss.dependency "Moya", "14.0.0-beta.6"
     ss.dependency "ObjectMapper", "~> 3.5"
     ss.framework  = "Foundation"
   end
