@@ -13,17 +13,17 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Ivan Bruel" => "ivan.bruel@gmail.com" }
   s.social_media_url   = "http://twitter.com/ivanbruel"
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '3.0'
-  s.tvos.deployment_target = '9.0'
+  s.tvos.deployment_target = '10.0'
   s.source       = { :git => "https://github.com/bmoliveira/Moya-ObjectMapper.git", :tag => s.version }
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/*.swift"
-    ss.dependency "Moya", "~> 12.0"
-    ss.dependency "ObjectMapper", "~> 3.4"
+    ss.dependency "Moya", ""14.0.0-beta.6""
+    ss.dependency "ObjectMapper", "~> 3.5"
     ss.framework  = "Foundation"
   end
 
